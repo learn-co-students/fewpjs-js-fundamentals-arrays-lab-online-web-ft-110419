@@ -1,11 +1,19 @@
 // Write your solution here!
 
-const pets = ["Milo", "Otis", "Garfield"];
+const append = ["Milo", "Otis", "Garfield"];
+append.push("Odie");
+const prepend = ["Milo", "Otis", "Garfield"];
+prepend.unshift("Odie");
+const removeLast = ["Milo", "Otis", "Garfield"];
+removeLast.pop();
+const removeFirst = ["Milo", "Otis", "Garfield"];
+removeFirst.shift();
 
-const append = [...pets, "Odie"];
+// OR
 
-const prepend = ["Odie", ...pets];
+// const pets = ["Milo", "Otis", "Garfield"];
+// const append = [...pets, "Odie"];
+// const prepend = ["Odie", ...pets];
+// const removeLast = pets.slice(0, 2);
+// const removeFirst = pets.slice(1,3);
 
-const removeLast = pets.slice(0, 2);
-
-const removeFirst = pets.slice(1,3);
